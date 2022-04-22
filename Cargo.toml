@@ -88,6 +88,10 @@ members = [
     "drv/lpc55-spi-server",
     "drv/lpc55-rng",
 
+    "drv/fpga-api",
+    "drv/fpga-devices",
+    "drv/fpga-server",
+
     "drv/user-leds",
     "drv/user-leds-api",
     "drv/ice40-spi-program",

@@ -199,6 +199,15 @@ start = true
 stacksize = 256
 task-slots = ["sys", "user_leds"]
 
+[tasks.fpga]
+path = "../../drv/fpga-server"
+name = "drv-fpga-server"
+priority = 3
+requires = {flash = 32768, ram = 4096}
+stacksize = 2048
+start = true
+task-slots = ["sys", "spi_driver"]
+
 [config]
 [[config.i2c.controllers]]
 controller = 2
